@@ -23,7 +23,7 @@ export default function Formular() {
   }
 
   return (
-    <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
       {/* Netlify kræver dette hidden input */}
       <input type="hidden" name="form-name" value="contact" />
 
